@@ -1,7 +1,7 @@
-package net.biggeination.forestry;
+package net.biggienation.forestry;
 
-import net.biggeination.forestry.Config;
 import com.mojang.logging.LogUtils;
+import net.biggienation.forestry.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -62,8 +62,11 @@ public class Forestry
             .title(Component.translatable("itemGroup.examplemod")) //The language key for the title of your CreativeModeTab
             .withTabsBefore(CreativeModeTabs.COMBAT)
             .icon(() -> EXAMPLE_ITEM.get().getDefaultInstance())
+            // Add the example item to the tab. For your own tabs, this method is preferred over the event
             .displayItems((parameters, output) -> {
-                output.accept(EXAMPLE_ITEM.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
+                output.accept(ModItems.FLOUR.get());
+                output.accept(ModItems.DOUGH.get());
+                output.accept(ModItems.MILK_BREAD.get());
             }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
@@ -85,11 +88,14 @@ public class Forestry
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        // Register the Deferred Register to the mod event bus so items for the ModItems class get registered
+        ModItems.init(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
-        modContainer.registerConfig(ModConfig.Type.COMMON, net.biggeination.forestry.Config.SPEC);
+        modContainer.registerConfig(ModConfig.Type.COMMON, net.biggienation.forestry.Config.SPEC);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -97,10 +103,10 @@ public class Forestry
         // Some common setup code
         LOGGER.info("HELLO FROM COMMON SETUP");
 
-        if (net.biggeination.forestry.Config.logDirtBlock)
+        if (net.biggienation.forestry.Config.logDirtBlock)
             LOGGER.info("DIRT BLOCK >> {}", BuiltInRegistries.BLOCK.getKey(Blocks.DIRT));
 
-        LOGGER.info(net.biggeination.forestry.Config.magicNumberIntroduction + net.biggeination.forestry.Config.magicNumber);
+        LOGGER.info(net.biggienation.forestry.Config.magicNumberIntroduction + net.biggienation.forestry.Config.magicNumber);
 
         Config.items.forEach((item) -> LOGGER.info("ITEM >> {}", item.toString()));
     }

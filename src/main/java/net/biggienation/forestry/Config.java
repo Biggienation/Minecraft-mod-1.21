@@ -1,4 +1,4 @@
-package net.biggeination.forestry;
+package net.biggienation.forestry;
 
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
