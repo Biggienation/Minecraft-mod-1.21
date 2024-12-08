@@ -1,6 +1,7 @@
 package net.biggienation.forestry;
 
 import com.mojang.logging.LogUtils;
+import net.biggienation.forestry.block.ModBlocks;
 import net.biggienation.forestry.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -67,6 +68,7 @@ public class Forestry
                 output.accept(ModItems.FLOUR.get());
                 output.accept(ModItems.DOUGH.get());
                 output.accept(ModItems.MILK_BREAD.get());
+                output.accept(ModBlocks.ASH_BLOCK.get());
             }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
@@ -90,6 +92,7 @@ public class Forestry
 
         // Register the Deferred Register to the mod event bus so items for the ModItems class get registered
         ModItems.init(modEventBus);
+        ModBlocks.init(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
