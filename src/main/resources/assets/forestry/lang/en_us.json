@@ -4,5 +4,9 @@
   "item.forestry.dough": "Dough",
   "item.forestry.milk_bread": "Milk Bread",
 
-  "block.forestry.ash_block": "Block of Ash"
+  "block.forestry.ash_block": "Block of Ash",
+  "block.forestry.stone_oven": "Stone Oven",
+
+  "creativetab.forestry.forestry_block": "Forestry Blocks",
+  "creativetab.forestry.forestry_item": "Forestry Items"
 }
