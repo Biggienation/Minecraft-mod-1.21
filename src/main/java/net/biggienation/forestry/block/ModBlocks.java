@@ -24,7 +24,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1).sound(SoundType.SNOW)));
 
-    public static final DeferredBlock<Block> STONE_OVEN = registerBlock("stone_oven",
+    public static final DeferredBlock<Block> STONE_OVEN = registerBlock("stone_oven.json",
             () ->
                 new Block(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
                         .instrument(NoteBlockInstrument.BASEDRUM)
