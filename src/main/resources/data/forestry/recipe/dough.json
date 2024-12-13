@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "forestry:flour"
+    },
+    "M": {
+      "item": "minecraft:milk_bucket"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "pattern": [
+    " FM",
+    " FS",
+    "   "
+  ],
+  "result": {
+    "count": 3,
+    "id": "forestry:dough"
+  }
+}
