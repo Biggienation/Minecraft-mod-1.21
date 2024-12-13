@@ -2,8 +2,10 @@ package net.biggienation.forestry.item;
 
 import net.biggienation.forestry.Forestry;
 
+import net.biggienation.forestry.item.custom.LighterItem;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -17,7 +19,7 @@ public class ModItems {
     public static final DeferredItem<Item> MILK_BREAD = ITEMS.registerSimpleItem("milk_bread", new Item.Properties()
             .food(new FoodProperties.Builder()
                     .nutrition(1).saturationModifier(2f).build()));
-
+    public static final DeferredItem<Item> LIGHTER = ITEMS.register("lighter", () -> new LighterItem(new Item.Properties().stacksTo(1).fireResistant()));
 
     //registers the items to the game
     public static void init(IEventBus modEventBus) {

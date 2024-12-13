@@ -37,6 +37,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.FLOUR.get());
                         output.accept(ModItems.DOUGH.get());
                         output.accept(ModItems.MILK_BREAD.get());
+                        output.accept(ModItems.LIGHTER.get());
                     }).build());
 
 
