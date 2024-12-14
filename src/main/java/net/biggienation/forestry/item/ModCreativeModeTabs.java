@@ -25,6 +25,7 @@ public class ModCreativeModeTabs {
                         // Add the example item to the tab. For your own tabs, this method is preferred over the event
                         output.accept(ModBlocks.ASH_BLOCK.get());
                         output.accept(ModBlocks.STONE_OVEN.get());
+                        output.accept(ModBlocks.MAGIC_BLOCK.get());
                     }).build());
 
     // Creates a creative tab with the id "examplemod:example_tab" for the example item, that is placed after the combat tab
