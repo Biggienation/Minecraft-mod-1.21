@@ -4,6 +4,7 @@
   "item.forestry.dough": "Dough",
   "item.forestry.milk_bread": "Milk Bread",
   "item.forestry.lighter": "Lighter",
+  "item.forestry.sugar_beet": "Sugar Beet",
 
 
   "block.forestry.ash_block": "Block of Ash",
@@ -11,5 +12,10 @@
   "block.forestry.magic_block": "Test block",
 
   "creativetab.forestry.forestry_block": "Forestry Blocks",
-  "creativetab.forestry.forestry_item": "Forestry Items"
+  "creativetab.forestry.forestry_item": "Forestry Items",
+
+  "tooltip.forestry:magic_block": "Test tooltip §9MAGICAL§r ",
+  "tooltip.forestry.lighter": "Looks like a item from a forgotten time",
+  "tooltip.forestry.milk_bread": "Looks like a tasty snack",
+  "tooltip.forestry.press_shift": "Press §lSHIFT§r for more information"
 }

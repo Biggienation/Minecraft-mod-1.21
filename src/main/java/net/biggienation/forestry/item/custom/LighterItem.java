@@ -1,16 +1,22 @@
 package net.biggienation.forestry.item.custom;
 
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BaseFireBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
+
+import java.util.List;
 
 
 //Ctrl + H, Opens an item menu
@@ -49,5 +55,14 @@ public class LighterItem extends Item {
 
     }
 
+    @Override
+    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+        if(Screen.hasShiftDown()){
+            tooltipComponents.add(Component.translatable("tooltip.forestry.lighter"));
+        }else {
+            tooltipComponents.add(Component.translatable("tooltip.forestry.press_shift"));
+        }
 
+        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+    }
 }

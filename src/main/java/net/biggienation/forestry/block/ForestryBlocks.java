@@ -2,7 +2,7 @@ package net.biggienation.forestry.block;
 
 import net.biggienation.forestry.Forestry;
 import net.biggienation.forestry.block.custom.MagicBlock;
-import net.biggienation.forestry.item.ModItems;
+import net.biggienation.forestry.item.ForestryItems;
 import net.minecraft.util.ColorRGBA;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -18,7 +18,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
-public class ModBlocks {
+public class ForestryBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(Forestry.MODID);
 
@@ -47,7 +47,7 @@ public class ModBlocks {
     };
 
     private static <T extends Block> void register(String name, DeferredBlock<T> block) {
-        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        ForestryItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
 
     }
 
