@@ -22,6 +22,10 @@ public class ForestryBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(Forestry.MODID);
 
+    public static final DeferredBlock<Block> CINNAMON_PLANKS = registerBlock("cinnamon_planks",
+            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD)
+                    .strength(1).sound(SoundType.WOOD)));
+
     // Press shift twice and search for BLOCKS and you can find the block properties
     public static final DeferredBlock<Block> ASH_BLOCK = registerBlock("ash_block",
             () -> new ColoredFallingBlock(new ColorRGBA(-8356741),BlockBehaviour.Properties.of()

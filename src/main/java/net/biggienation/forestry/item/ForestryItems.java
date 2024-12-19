@@ -20,6 +20,8 @@ public class ForestryItems {
 
     public static final DeferredItem<Item> FLOUR = ITEMS.registerSimpleItem("flour");
     public static final DeferredItem<Item> DOUGH = ITEMS.registerSimpleItem("dough");
+    public static final DeferredItem<Item> BUTTER = ITEMS.registerSimpleItem("butter");
+    public static final DeferredItem<Item> CHEESE = ITEMS.registerSimpleItem("cheese");
 
     //Food Items
     public static final DeferredItem<Item> MILK_BREAD = ITEMS.register("milk_bread",() -> new Item( new Item.Properties()

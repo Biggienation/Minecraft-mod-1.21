@@ -5,11 +5,14 @@
   "item.forestry.milk_bread": "Milk Bread",
   "item.forestry.lighter": "Lighter",
   "item.forestry.sugar_beet": "Sugar Beet",
+  "item.forestry.butter": "Butter",
+  "item.forestry.cheese": "Cheese",
 
 
   "block.forestry.ash_block": "Block of Ash",
   "block.forestry.stone_oven": "Stone Oven",
   "block.forestry.magic_block": "Test block",
+  "block.forestry.cinnamon_planks": "Cinnamon Planks",
 
   "creativetab.forestry.forestry_block": "Forestry Blocks",
   "creativetab.forestry.forestry_item": "Forestry Items",

@@ -26,6 +26,7 @@ public class ModCreativeModeTabs {
                         output.accept(ForestryBlocks.ASH_BLOCK.get());
                         output.accept(ForestryBlocks.STONE_OVEN.get());
                         output.accept(ForestryBlocks.MAGIC_BLOCK.get());
+                        output.accept(ForestryBlocks.CINNAMON_PLANKS.get());
                     }).build());
 
     // Creates a creative tab with the id "examplemod:example_tab" for the example item, that is placed after the combat tab
@@ -40,6 +41,8 @@ public class ModCreativeModeTabs {
                         output.accept(ForestryItems.MILK_BREAD.get());
                         output.accept(ForestryItems.SUGAR_BEET);
                         output.accept(ForestryItems.LIGHTER.get());
+                        output.accept(ForestryItems.BUTTER.get());
+                        output.accept(ForestryItems.CHEESE.get());
                     }).build());
 
 
