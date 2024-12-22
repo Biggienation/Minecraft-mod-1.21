@@ -21,10 +21,20 @@ import java.util.function.Supplier;
 public class ForestryBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(Forestry.MODID);
-
+    // Cinnamon_tree blocks
     public static final DeferredBlock<Block> CINNAMON_PLANKS = registerBlock("cinnamon_planks",
             () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD)
                     .strength(1).sound(SoundType.WOOD)));
+    public static final DeferredBlock<Block> CINNAMON_LOG = registerBlock("cinnamon_log",
+            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD)
+                    .strength(1).sound(SoundType.WOOD)));
+    public static final DeferredBlock<Block> STRIPED_CINNAMON_LOG = registerBlock("striped_cinnamon_log",
+            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD)
+                    .strength(1).sound(SoundType.WOOD)));
+    public static final DeferredBlock<Block> CINNAMON_LEAF = registerBlock("cinnamon_leaf",
+            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN)
+                    .strength(0.5F).sound(SoundType.CHERRY_LEAVES)
+                    .requiresCorrectToolForDrops()));
 
     // Press shift twice and search for BLOCKS and you can find the block properties
     public static final DeferredBlock<Block> ASH_BLOCK = registerBlock("ash_block",
@@ -34,8 +44,7 @@ public class ForestryBlocks {
 
 
     public static final DeferredBlock<Block> STONE_OVEN = registerBlock("stone_oven",
-            () ->
-                new Block(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
+            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
                         .instrument(NoteBlockInstrument.BASEDRUM)
                         .requiresCorrectToolForDrops()
                         .strength(3.5F)));

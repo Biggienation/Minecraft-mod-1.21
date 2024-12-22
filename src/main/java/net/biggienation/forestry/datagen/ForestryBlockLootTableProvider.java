@@ -18,8 +18,13 @@ public class ForestryBlockLootTableProvider  extends BlockLootSubProvider {
     protected void generate() {
         dropSelf(ForestryBlocks.ASH_BLOCK.get());
         dropSelf(ForestryBlocks.MAGIC_BLOCK.get());
-        dropSelf(ForestryBlocks.CINNAMON_PLANKS.get());
         dropSelf(ForestryBlocks.STONE_OVEN.get());
+
+        //Cinnamon_tree Blocks
+        dropSelf(ForestryBlocks.CINNAMON_PLANKS.get());
+        dropSelf(ForestryBlocks.CINNAMON_LOG.get());
+        dropSelf(ForestryBlocks.CINNAMON_LEAF.get());
+        dropSelf(ForestryBlocks.STRIPED_CINNAMON_LOG.get());
     }
 
     @Override
