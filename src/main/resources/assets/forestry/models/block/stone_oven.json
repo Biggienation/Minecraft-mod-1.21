@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/orientable",
-  "textures": {
-    "front": "forestry:block/stone_oven_front",
-    "side": "forestry:block/stone_oven_side",
-    "top": "forestry:block/stone_oven_top"
-  }
-}
