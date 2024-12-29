@@ -1,5 +1,5 @@
-// 1.21	2024-12-19T18:59:23.3861114	Loot Tables
+// 1.21	2024-12-29T15:10:55.6995134	Loot Tables
 b564165f3d3d442c85971de48c1b2ffe9c54619c data/forestry/loot_table/blocks/ash_block.json
-944378b786886ee21b68e9fc968076596a59b21d data/forestry/loot_table/blocks/cinnamon_planks.json
+03e8e7a41440df53e11f7db68fc84026e9f890ca data/forestry/loot_table/blocks/ember_block.json
 61fdb5bae992d0634f73348baf573c31a1440cbc data/forestry/loot_table/blocks/magic_block.json
 c98f4981bdd407f5c553ddb381a96c17ed2f9bb3 data/forestry/loot_table/blocks/stone_oven.json

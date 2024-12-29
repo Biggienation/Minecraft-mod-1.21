@@ -2,6 +2,7 @@ package net.biggienation.forestry;
 
 import com.mojang.logging.LogUtils;
 import net.biggienation.forestry.block.ForestryBlocks;
+import net.biggienation.forestry.block.Cinnamon_Tree_Pack;
 import net.biggienation.forestry.item.ForestryItems;
 import net.biggienation.forestry.item.ModCreativeModeTabs;
 import net.minecraft.client.Minecraft;
@@ -82,6 +83,7 @@ public class Forestry
         // Register the Deferred Register to the mod event bus so items for the ModItems class get registered
         ForestryItems.init(modEventBus);
         ForestryBlocks.init(modEventBus);
+        Cinnamon_Tree_Pack.init(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

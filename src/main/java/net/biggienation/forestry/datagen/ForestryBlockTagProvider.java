@@ -2,6 +2,7 @@ package net.biggienation.forestry.datagen;
 
 import net.biggienation.forestry.Forestry;
 import net.biggienation.forestry.block.ForestryBlocks;
+import net.biggienation.forestry.block.Cinnamon_Tree_Pack;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -22,12 +23,18 @@ public class ForestryBlockTagProvider extends BlockTagsProvider {
                 .add(ForestryBlocks.STONE_OVEN.get());
 
         tag(BlockTags.MINEABLE_WITH_AXE)
-                .add(ForestryBlocks.CINNAMON_LOG.get())
-                .add(ForestryBlocks.STRIPED_CINNAMON_LOG.get())
-                .add(ForestryBlocks.CINNAMON_PLANKS.get());
+                .add(Cinnamon_Tree_Pack.CINNAMON_LOG.get())
+                .add(Cinnamon_Tree_Pack.STRIPED_CINNAMON_LOG.get())
+                .add(Cinnamon_Tree_Pack.CINNAMON_PLANKS.get());
 
         tag(BlockTags.MINEABLE_WITH_SHOVEL);
 
         tag(BlockTags.NEEDS_IRON_TOOL);
+
+        tag(BlockTags.LEAVES).add(Cinnamon_Tree_Pack.CINNAMON_LEAVES.get());
+
+        tag(BlockTags.FENCES).add(Cinnamon_Tree_Pack.CINNAMON_PLANK_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(Cinnamon_Tree_Pack.CINNAMON_PLANK_FENCE_GATE.get());
+        tag(BlockTags.WALLS).add(Cinnamon_Tree_Pack.CINNAMON_PLANK_WALL.get());
     }
 }

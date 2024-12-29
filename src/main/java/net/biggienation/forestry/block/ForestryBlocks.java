@@ -1,6 +1,7 @@
 package net.biggienation.forestry.block;
 
 import net.biggienation.forestry.Forestry;
+import net.biggienation.forestry.block.custom.EmberBlock;
 import net.biggienation.forestry.block.custom.MagicBlock;
 import net.biggienation.forestry.item.ForestryItems;
 import net.minecraft.util.ColorRGBA;
@@ -21,26 +22,17 @@ import java.util.function.Supplier;
 public class ForestryBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(Forestry.MODID);
-    // Cinnamon_tree blocks
-    public static final DeferredBlock<Block> CINNAMON_PLANKS = registerBlock("cinnamon_planks",
-            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD)
-                    .strength(1).sound(SoundType.WOOD)));
-    public static final DeferredBlock<Block> CINNAMON_LOG = registerBlock("cinnamon_log",
-            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD)
-                    .strength(1).sound(SoundType.WOOD)));
-    public static final DeferredBlock<Block> STRIPED_CINNAMON_LOG = registerBlock("striped_cinnamon_log",
-            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD)
-                    .strength(1).sound(SoundType.WOOD)));
-    public static final DeferredBlock<Block> CINNAMON_LEAF = registerBlock("cinnamon_leaf",
-            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN)
-                    .strength(0.5F).sound(SoundType.CHERRY_LEAVES)
-                    .requiresCorrectToolForDrops()));
+
 
     // Press shift twice and search for BLOCKS and you can find the block properties
     public static final DeferredBlock<Block> ASH_BLOCK = registerBlock("ash_block",
             () -> new ColoredFallingBlock(new ColorRGBA(-8356741),BlockBehaviour.Properties.of()
                     .strength(1).sound(SoundType.SNOW)));
     //ColoredFallingBlocks need an RGBA color and then the properties, (sand, gravel)
+
+    public static final DeferredBlock<Block> EMBER_BLOCK = registerBlock("ember_block",
+            () -> new EmberBlock(BlockBehaviour.Properties.of()
+                    .strength(2).requiresCorrectToolForDrops().lightLevel(state -> state.getValue(EmberBlock.ON_OFF) ? 15: 0)));
 
 
     public static final DeferredBlock<Block> STONE_OVEN = registerBlock("stone_oven",

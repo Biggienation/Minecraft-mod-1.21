@@ -2,6 +2,7 @@ package net.biggienation.forestry.item;
 
 import net.biggienation.forestry.Forestry;
 import net.biggienation.forestry.block.ForestryBlocks;
+import net.biggienation.forestry.block.Cinnamon_Tree_Pack;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -26,7 +27,26 @@ public class ModCreativeModeTabs {
                         output.accept(ForestryBlocks.ASH_BLOCK.get());
                         output.accept(ForestryBlocks.STONE_OVEN.get());
                         output.accept(ForestryBlocks.MAGIC_BLOCK.get());
-                        output.accept(ForestryBlocks.CINNAMON_PLANKS.get());
+
+                        output.accept(Cinnamon_Tree_Pack.CINNAMON_PLANKS.get());
+                        output.accept(Cinnamon_Tree_Pack.CINNAMON_LEAVES.get());
+                        output.accept(Cinnamon_Tree_Pack.CINNAMON_LOG.get());
+                        output.accept(Cinnamon_Tree_Pack.STRIPED_CINNAMON_LOG);
+
+                        output.accept(Cinnamon_Tree_Pack.CINNAMON_PLANK_STAIRS.get());
+                        output.accept(Cinnamon_Tree_Pack.CINNAMON_PLANK_SLAB.get());
+
+                        output.accept(Cinnamon_Tree_Pack.CINNAMON_PLANK_FENCE.get());
+                        output.accept(Cinnamon_Tree_Pack.CINNAMON_PLANK_FENCE_GATE.get());
+                        output.accept(Cinnamon_Tree_Pack.CINNAMON_PLANK_WALL.get());
+
+                        output.accept(Cinnamon_Tree_Pack.CINNAMON_PLANK_BUTTON.get());
+                        output.accept(Cinnamon_Tree_Pack.CINNAMON_PLANK_PRESSURE_PLATE.get());
+
+                        output.accept(Cinnamon_Tree_Pack.CINNAMON_PLANK_DOOR.get());
+                        output.accept(Cinnamon_Tree_Pack.CINNAMON_PLANK_TRAP_DOOR.get());
+
+                        output.accept(ForestryBlocks.EMBER_BLOCK.get());
                     }).build());
 
     // Creates a creative tab with the id "examplemod:example_tab" for the example item, that is placed after the combat tab
