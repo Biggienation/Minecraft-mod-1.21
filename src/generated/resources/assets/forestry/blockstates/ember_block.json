@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "on_off=false": {
+      "model": "forestry:block/ember_block_off"
+    },
+    "on_off=true": {
+      "model": "forestry:block/ember_block_on"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "Cinnamon",
+  "key": {
+    "#": {
+      "item": "forestry:cinnamon_planks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "forestry:cinnamon_plank_stairs"
+  }
+}

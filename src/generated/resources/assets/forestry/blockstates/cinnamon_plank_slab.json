@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "forestry:block/cinnamon_plank_slab"
+    },
+    "type=double": {
+      "model": "forestry:block/cinnamon_planks"
+    },
+    "type=top": {
+      "model": "forestry:block/cinnamon_plank_slab_top"
+    }
+  }
+}

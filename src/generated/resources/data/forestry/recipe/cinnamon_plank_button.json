@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "Cinnamon",
+  "ingredients": [
+    {
+      "item": "forestry:cinnamon_planks"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "forestry:cinnamon_plank_button"
+  }
+}

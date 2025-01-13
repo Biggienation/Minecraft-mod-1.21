@@ -2,11 +2,13 @@ package net.biggienation.forestry.item;
 
 import net.biggienation.forestry.Forestry;
 
+import net.biggienation.forestry.item.custom.JungleDaggerItem;
 import net.biggienation.forestry.item.custom.LighterItem;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.TooltipFlag;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -41,7 +43,7 @@ public class ForestryItems {
 
     //Special Items
     public static final DeferredItem<Item> LIGHTER = ITEMS.register("lighter", () -> new LighterItem(new Item.Properties().stacksTo(1).fireResistant()));
-
+    public static final DeferredItem<JungleDaggerItem> JUNGLE_DAGGER = ITEMS.register("jungle_dagger", () -> new JungleDaggerItem(Tiers.IRON, new Item.Properties().stacksTo(1).fireResistant()));
     //registers the items to the game
     public static void init(IEventBus modEventBus) {
         ITEMS.register(modEventBus);

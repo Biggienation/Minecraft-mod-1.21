@@ -63,6 +63,7 @@ public class ModCreativeModeTabs {
                         output.accept(ForestryItems.LIGHTER.get());
                         output.accept(ForestryItems.BUTTER.get());
                         output.accept(ForestryItems.CHEESE.get());
+                        output.accept(ForestryItems.JUNGLE_DAGGER.get());
                     }).build());
 
 

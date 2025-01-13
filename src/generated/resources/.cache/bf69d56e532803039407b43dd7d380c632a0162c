@@ -1,0 +1,9 @@
+// 1.21	2025-01-13T20:51:00.245709	Tags for minecraft:block mod id forestry
+090dce24d6865637e22ba3164a94cd4ab2942e93 data/minecraft/tags/block/fence_gates.json
+89494217a0a92aa1b3b9a5302cb4ec651396200e data/minecraft/tags/block/fences.json
+ee6e07d28bd08d3a6c06e9051247116a4a0c9726 data/minecraft/tags/block/leaves.json
+ce7f6941311c3d4f6f64e7299cf108ed66c8c600 data/minecraft/tags/block/mineable/axe.json
+22f36a1ede3205b0bf5482bcaf7d65520ccc8712 data/minecraft/tags/block/mineable/pickaxe.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/mineable/shovel.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/needs_iron_tool.json
+067270ec10f6227347368ce85c99c5e7f43b6853 data/minecraft/tags/block/walls.json

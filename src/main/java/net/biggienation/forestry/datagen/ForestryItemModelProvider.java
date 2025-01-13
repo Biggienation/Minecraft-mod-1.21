@@ -3,6 +3,7 @@ package net.biggienation.forestry.datagen;
 import net.biggienation.forestry.Forestry;
 import net.biggienation.forestry.block.Cinnamon_Tree_Pack;
 import net.biggienation.forestry.item.ForestryItems;
+import net.biggienation.forestry.item.custom.JungleDaggerItem;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
@@ -24,6 +25,7 @@ public class ForestryItemModelProvider extends ItemModelProvider {
         basicItem(ForestryItems.LIGHTER.get());
         basicItem(ForestryItems.MILK_BREAD.get());
         basicItem(ForestryItems.SUGAR_BEET.get());
+        basicItem(ForestryItems.JUNGLE_DAGGER.get());
 
         buttonItem(Cinnamon_Tree_Pack.CINNAMON_PLANK_BUTTON, Cinnamon_Tree_Pack.CINNAMON_PLANKS);
         fenceItem(Cinnamon_Tree_Pack.CINNAMON_PLANK_FENCE, Cinnamon_Tree_Pack.CINNAMON_PLANKS);
